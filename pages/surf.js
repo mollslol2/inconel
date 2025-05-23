@@ -17,8 +17,7 @@ export default function Surf() {
         }
 
         e.target.reset();
-        window.location.href = `https://www.nebulaofficial.gq/proxy/${btoa(browse.toString())}`;
-    }
+ router.push(`/browse/${browse.toString()}`);
 
     return (
         <form className="pt-44 space-x-4" onSubmit={handle}>
